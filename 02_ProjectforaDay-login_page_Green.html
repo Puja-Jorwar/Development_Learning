@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(8, 32, 3);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .greenCard {
+        background-color: rgb(170, 227, 174);
+        margin: 10px;
+        padding: 30px;
+
+        height: 400px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: ;
+      }
+
+      h1 {
+        color: rgb(4, 47, 33);
+        margin-top: 30px;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      input {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 3px;
+        padding: 7px;
+        border-radius: 5px;
+        border-top: 10px;
+        background-color: rgb(230, 235, 231);
+        border: 1px solid back;
+        transition: border-color 0.3s;
+      }
+      input:focus {
+        border-color: rgb(51, 132, 45);
+      }
+      button {
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgb(51, 132, 45);
+        color: #fff;
+      }
+      button:hover {
+        background-color: rgb(19, 114, 58);
+      }
+      .error {
+        color: rgb(198, 89, 89);
+      }
+      .forget-password {
+        color: rgb(51, 132, 42);
+        text-decoration: none;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="greenCard">
+      <h1>Sign In</h1>
+      <form action="">
+        Email address
+        <input type="emai" placeholder="Login" />
+        <div class="error">Please enter a vaid email address.</div>
+        Password
+        <input type="Password" placeholder="password" required />
+        <div class="error">password must be at least 6 character.</div>
+        <button>Sign in</button>
+      </form>
+      <div class="forgot-password">
+        <a href="#">Forgot password</a>
+      </div>
+    </div>
+  </body>
+</html>
