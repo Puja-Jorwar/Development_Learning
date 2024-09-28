@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10;
+            padding: 10px;
+            background-color: #1a1a1a;
+            color: #ffffff6d;
+            margin-bottom: 100px;
+            
+
+        }
+        .nav-container{
+           
+            margin-bottom: 40px;
+        }
+        h1{
+            margin-bottom: 10px;}
+            
+        .nav1 ul {
+            background-color: rgb(218, 223, 218);
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+            
+
+        }
+        .nav1 li{
+            display: inline;
+        }
+        .nav1 a {
+            text-decoration: none;
+            color: rgb(11, 11, 11);
+            padding: 5px 10px;
+            position: relative;
+
+        }
+        .nav1 a::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #1512cd52;
+            transform: ScaleX(0);
+            transition: transform 0.2s ease-in-out;
+
+        }
+        .nav1 a:hover{
+         color: rgb(210, 31, 31);
+        }
+        .nav1 a:hover::after{
+          transform: Scale(1);
+        }
+        .nav1 .login-btn{
+          background-color: #051a47d7;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          color: #fff;
+          padding: 5px 15px;
+        }
+        .nav1 .login-btn:hover{
+          background-color: #0b2cd2b4;
+        }
+
+        .nav2 {
+          background-color: #1a2b2d;
+          width: 189px;
+          padding: 20px; 
+          border-radius: 10px; 
+          height:160px;
+          margin-top: 50px;
+          color: #b2e0d4;
+        }
+        .nav2 ul{
+          list-style-type:none;
+          margin: 0;
+          padding: 0;
+          margin-top: 15px;
+        }
+        .nav2 li{
+          margin-bottom: 15px; 
+        }
+        .nav2 a{
+          color: #b2e0d4;
+          text-decoration: none;
+          padding: 0;
+          display: rgb(22, 22, 22);
+        }
+        .nav2 a:hover{
+          background-color: #0f4c4f;
+          display: block;
+          
+        }
+        .nav2 .login-btn{
+          color: #fff;
+          background-color: #235e14;
+          border-radius: 5px;
+          border: none;
+          padding: 10px;
+          width: 100%;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+        .nav2 .login-btn:hover{
+          background-color: #053a0e;
+          border: 1px solid #fff;
+        }
+        .nav3 {
+            background-color: #2a53b4; 
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .nav3 ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav3 li {
+            position: relative;
+        }
+        .nav3 a {
+            padding: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+        .nav3 a:hover {
+            background-color: #acb9d2; 
+        }
+        .nav3 .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2670bb;
+            border-radius: 5px;
+            padding: 10px;
+            
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            width: 150px;
+        }
+        .nav3 .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .nav3 .dropdown-content a {
+            color: #ffffff; 
+            padding: 8px 12px;
+            transition: background-color 0.3s ease;
+            border-radius: 3px;
+        }
+        .nav3 .dropdown-content a:hover {
+            background-color: #34495e; 
+        }
+        .nav3 .login-btn {
+            color: #fff;
+            background-color: #235e14;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .nav3 .login-btn:hover {
+            background-color: #053a0e; 
+            border: 1px solid #fff;
+        }
+
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #ff6f61, #6a5b8a);
+    padding: 15px 30px;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.navbar:hover {
+    background: linear-gradient(90deg, #6a5b8a, #ff6f61);
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #ffd700; /* Gold */
+    width: 0;
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Gold on hover */
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+         
+          
+        
+        
+        
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+      <h2>Variation 1: Horizontal with underline effect</h2>
+      <nav class="nav1">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><button class="login-btn">Login</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-container"></div>
+      <h2>Variation 2: vertical with hover effect</h2>
+      <nav class="nav2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          
+          <li><a href="#">About</a></li>
+          
+          <li><a href="#">Products</a></li>
+          <li><button class="login-btn">Login</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+<div class="nav-container"></div>
+      <h2>Variation 3: Horizontal with dropdown</h2>
+      <nav class="nav3">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li class="dropdown">
+          <a href="#">About</a>
+          <div class="dropdown-content">
+            <a href="#">Our story</a>
+            <a href="#">Team</a>
+            
+            <a href="#">Contact</a>
+          </div>
+          </li>
+          <li><a href="#">Products</a></li>
+          <li>
+            <button class="login-btn">Login</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h2>ChatGPT Navbar</h2>
+<nav class="navbar">
+    <div class="logo">MySite</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+  </body>
+</html>
