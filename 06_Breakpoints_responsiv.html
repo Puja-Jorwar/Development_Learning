@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resposive design</title>
+    <style>
+      body {
+        color: black;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .a {
+        background-color: #cc1515;
+        width: 100%;
+        max-width: 1200px;
+        font-size: 20px;
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        body {
+          align-items: flex-start;
+        }
+        .a {
+          background-color: #1147c6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      This is responsive div chnage color on the basis of page size
+    </div>
+  </body>
+</html>
