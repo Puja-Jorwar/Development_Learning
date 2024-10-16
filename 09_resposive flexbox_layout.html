@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping */
+            background-color: yellow; /* Yellow background for distinction */
+            padding: 20px; /* Add some padding */
+            gap: 10px; /* Space between items */
+            max-width: 800px; /* Max width for the container */
+            width: 100%; /* Full width on smaller screens */
+        }
+
+        .flex-item {
+            flex: 0 0 200px; /* Fixed width */
+            height: 100px; /* Fixed height */
+            background-color: red; /* Red background for distinction */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Text color for contrast */
+            font-size: 20px; /* Font size */
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Box 1</div>
+        <div class="flex-item">Box 2</div>
+        <div class="flex-item">Box 3</div>
+    </div>
+</body>
+</html>
