@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>positioning</title>
+    <style type="text/css" media="all">
+    .parent-container{
+        position: relative;
+        
+    }
+    .static-box{
+        background-color: red;
+        position: static;
+    }
+    .relative-box{
+       
+        background-color: blue;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        
+    }
+    .absolute-box{
+        background-color: violet;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+        
+    </style>
+    
+    
+</head>
+<body>
+    <div class="parent-container">
+        <div class="static-box">
+            static
+        </div>
+        <div class="relative-box">
+            relative
+        </div>
+        <div class="absolute-box">
+            absolute
+        </div>
+    </div>
+</body>
+</html>
