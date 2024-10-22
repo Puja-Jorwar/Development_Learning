@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+        <title>3x3 Grid Layout</title>
+        <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Space between grid items */
+    width: 90vw; /* Adjust container width */
+    max-width: 600px; /* Maximum width */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+.grid-item{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+    aspect-ratio: 1;    
+}
+
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">
+              1  
+            </div>
+            <div class="grid-item">
+             2   
+            </div>
+            <div class="grid-item">
+               3 
+            </div>
+            <div class="grid-item">
+               4 
+            </div>
+            <div class="grid-item">
+               5 
+            </div>
+            <div class="grid-item">
+               6 
+            </div>
+            <div class="grid-item">
+               7 
+            </div>
+            <div class="grid-item">
+               8 
+            </div>
+            <div class="grid-item">
+               9 
+            </div>
+            
+        </div>
+    </body>
+<!--Add your HTML code here-->
+</html>
