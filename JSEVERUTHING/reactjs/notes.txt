@@ -1,0 +1,131 @@
+react learning->
+1. react js se code karana
+2. react js ka interview crack krna
+
+react larn what matters
+
+what?--> facebook ko ek problem najar aai ki real time me wo notifications and reaction ko show nahi kr paa rahe hai,unhe reaction notification and other data delevere krne me page reload krna pad raha hai, kyuki they were using something called php, ab es pbl se niptne keliye 2013 me ek facebook ke engg ne ek library banayi, ye librari khas thi kyuki ye data ko real time me dikha paa rahi thi par es library ke kam krne ka tarika diff tha, ye main DOM tree ko update nahi krti hai directly, matalb ki agar page main kuch bhi change hua to directly main DOM tree update nahi hogga, is library ka khud ka ek DOM tree hai uska naam hai virtual DOM. ye DOM tree exCT CCOPY HAI REAL DOM tree ka bas ek diff hai wo hai jab bhi virtual DOM me kuch change hoga tab sirf use changae kiya jaega jo change hua hai na ki pure tree ko refresh kiya jaega.
+
+esliye react became so famous and useful for big application. esasse wb pe app jaisa feel hota hai, jyada reload nahi hota har bar.
+ web -> refoke.com(best animated we) 
+
+aap web page pe dekhoge similar componet dekhoge like same buuton like layot aor any other component
+
+
+features 
+- very very very less page reloads
+- extream use of reusable component
+- very very efficient
+
+
+
+problem --> browsers ka nature hota hai jab bhi page me kuch bhi change ho to pura DOM tree refresh karo, jiske wajah se pura page re render hoga , jo ki kafi inefficient hai, matlab ko socho agar ek change par DOM ek bar refresh ho rha hai to 1lakh change pe 1lakh bar refresh hoga, browser crash ho jaega
+
+
+what ? --> js library to maintain the frontend efficiently
+
+why? --> efficient and lightweight
+how? ---> create components, and make data if you need it, link the data and change data whenever you want, react will react jab bhi data change hoga
+
+
+when? --> jab aapp ek thoda bade level par app create karna ho, jismein khoob sar reusable component structure HAI
+
+KUCH KAAM KARLO
+____________________________________________________________
+
+1. code karana ki jagah banana --> vs code
+2. code chalana --> google chrome, npm run dev
+3. default code lekar aana --> npm create vite@latest 
+
+4. output dikhana -->npm run dev 
+5. code ke folder structure ko samjhana
+ --> node_module --> ye wo files and folder hai jo react app ko chahiye chalane keliye
+
+ --> public --> ye wo files hai jo public hongi, jaisein logo, images, css, js files, ye sab public hongi, jaisein index.html, index.js, index.css, static data ko put kr sakat ho
+
+ src --> yaha bhi static data
+
+--> baki jo jsx dikh rahe hai wahi sare components hai
+
+aap componets banate ho aur ye sare ccomponets jate hai ek parent component me, aur parent component ko body me put kr dia jata hai, ek bade area ko aur bar bar repeat ho ra aho use component bana do
+
+src ka app.css uda do, aur app.jsx ka code hatao 
+
+aur App.jsx me ikho rfce aur enter karo (ES7+ extention hona chahiye)
+ aapko kuch aisa dikhega\/
+
+ye hai component ka template
+
+import React from 'react'
+
+function App() {
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
+
+---> componet ek function ahi jo ki return karega jsx
+----> jsx----> jsx html ki tarah dikhane wala syntax hai but uske pas kuch superpowers hai jo html ke pass hai
+
+ex;
+<h1>2+2</h1>
+
+
+
+
+
+
+react coding mein sarra code khud se nahi likhana padata hai, react waalo ne aapko ek tool diya hai uska naam hai create-react-app
+
+
+
+steps->
+1. vite install karo
+2. vite se nya app banao
+
+ye command sirf tab chalega jab nodejs npm install hoga
+
+styling karna react mein
+
+component
+//ek component se data dusre component me kaise bhejate ho
+
+
+vite - react raw app create kr paoge however you want
+
+npm create vite@latest -- ye command create krna hai , open cmd 
+
+--> npm i
+--> npm run dev
+
+
+6. styling krna react me ==>module css, tailwindcss, material ui
+
+//hum karenge talwind use
+
+-->
+1. search tailwindcss .com
+2. get started --> go framework guide
+3. vite pe jana hai
+4.install tailwind css
+5. copy command --> paste on terminal
+enter
+6. agla command chalana hi jo wah ape ikha hai
+7. phir content ko copy krna hai phir yaha pe aao
+8. tailwind.config.js me aao
+9. content wale part ko select krke paste karo
+10. phir index.css walal copy karo aur pura haatke paste kro
+
+tailwind ke docs ko follow karo
+
+
+component
+component jodna==> components aap APpp.jsx ke bahar dusre file me bhi create kr sakate hai par use import krna padega App.jsx me aur component me self closing tag ke rup me likhana padega jaise ki Product.jsx ka kiya HAI
+
+component me reaction of data change samajhana==>
+
+State==> react will react when state changes
+
+Component me data bhejana aur receive karana
