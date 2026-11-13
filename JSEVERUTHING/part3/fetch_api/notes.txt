@@ -1,0 +1,18 @@
+--> go to random user api ,copy the url
+naye tab me paste krke enter aapko data milega
+-->ye json me hota hai, javascript object notation, ye object jaisa dikhata hai
+-->
+
+{
+   " name": "fetch_api",
+}
+
+==> fetch("url_to fetch_data).
+then((rawdata) => {
+    console.log(rawdata);
+})
+.catch((err) => {
+    console.log(err);
+})
+
+-==>

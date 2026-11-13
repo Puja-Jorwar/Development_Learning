@@ -1,0 +1,62 @@
+1/ Document Object Model
+pura html ek node hota hai
+jaise ki har tag div ho gya aur baki bhi
+pure webpage pe jo kuch bhi dikh raha hai wo domm ka par hai - h1, image, div sab
+2/ DOm Manipulation - javascript se manipulate krna html ko 
+
+//example-> you  tab on download button it will download the file ye dom manipulation hai
+
+//Dom samjhna hai aur dom manipulation sikhana hai
+
+//boy-coy website interesting
+
+//
+1. html se element select krna
+2. text badalana
+3. html badalana
+4. css badalana
+5. attribute badalana
+6. child add krna
+7. child remove krna
+8. parent badalana
+9. sibling badalana
+10. event listener
+
+bheja ka istemal krna pdega
+slecting element: 
+(purane log akabar biral agar aap purane legacy code dekhoge to aapko ye dikhega)
+- gitElementById
+- getElementByClassName
+- getElementByTagName
+(aajkal ye use hote hai)
+- querySelector
+- querySelectorAll
+
+
+3/ test/Content access
+- innerText
+- innerHTML
+- innerContent
+
+4./ Attribute manipulation: 
+getAttribute, 
+setAttribute, 
+removeAttribute
+
+5./ Dynamic DOM manipulation: 
+createElement, 
+appendChild, 
+removeChild, 
+prepend
+
+6./ Style updates via: 
+style and classList (add, remove, toggle)
+
+7./ Confusion:
+Difference between innerText vs textContent vs innerHTML
+
+8./ Live HTMLCollection vs static NodeList
+
+🧠 Mindset:
+DOM is the page’s brain – use it responsibly
+

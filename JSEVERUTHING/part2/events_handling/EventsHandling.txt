@@ -1,0 +1,13 @@
+browser me page par koi bhi harkat karo event raise ho jaega
+
+-> kuch screen par ho aur aapko reaction dena ho to us waqt aapko event handle krna aana chahiye
+
+
+->event mtalb hot hai koi action hua click hua double click kuch to hua e
+
+//event listener ka matalab hota hai aapne kuch action ka reaction diya 
+
+//dblclick
+
+//syntax
+element.addEventListener("event ka naam", function () {});

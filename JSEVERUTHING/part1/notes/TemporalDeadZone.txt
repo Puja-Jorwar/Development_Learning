@@ -1,0 +1,31 @@
+//temporal Dead Zone -- utna area js ko pata to hai ki variable exist krta hai par wo aapko value nahi de sakata
+
+//cannot access varaiable before initialization
+console.log(a);
+
+//
+
+
+
+
+
+
+this is a variables tempral dead zone of let a = 12;
+
+
+
+
+
+
+
+
+
+//
+let a = 12;
+
+
+//but var is exception
+
+
+
+var me temporal dead zone nahi hota let ,mein hota hai

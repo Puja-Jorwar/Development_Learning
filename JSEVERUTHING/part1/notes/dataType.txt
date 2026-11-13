@@ -1,0 +1,4 @@
+1. premitive -- jinme bracket nahi hote 
+2. Referrences -- jinme hote hai , ex [],  arrays
+
+3. premitives ko directly copy kr sakte hai

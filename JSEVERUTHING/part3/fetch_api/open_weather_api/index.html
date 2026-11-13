@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+
+  <!-- Tailwind CDN (optional but recommended) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100 flex justify-center items-center min-h-screen">
+
+  <!-- Main Container -->
+  <div class="bg-white shadow-lg rounded-2xl p-20 w-100 text-center">
+
+    <!-- App Title -->
+    <h1 class="text-4xl font-bold mb-10">🌦️ Weather App</h1>
+
+    <!-- Search Input -->
+    <div class="flex gap-8 mb-9">
+      <input 
+        id="city-input"
+        type="text"
+        placeholder="Enter city..."
+        class="flex-1 px-9 py-5 border rounded-lg outline-none"
+      />
+      <button 
+        id="search-btn"
+        class="px-9 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+        Search
+      </button>
+    </div>
+
+    <!-- Weather Info -->
+    <div id="weather-info">
+
+      <h2 id="city-name" class="text-1xl font-semibold">City</h2>
+      <p id="temperature" class="text-3xl font-bold mt-2">--°C</p>
+      <p id="description" class="text-gray-500">Weather description</p>
+
+    </div>
+
+    <!-- Error Message -->
+    <p id="error-msg" class="text-red-500 mt-3 hidden">
+      City not found
+    </p>
+
+  </div>
+
+</body>
+</html>

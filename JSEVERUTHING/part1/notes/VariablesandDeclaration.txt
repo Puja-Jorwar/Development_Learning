@@ -1,0 +1,17 @@
+# variables
+--var,let,const
+--> we will not use var(Old)
+--> let when value has to change
+--> const when fixed 
+value
+
+#var is part of ES5 and let and const is of ES6
+
+#akways use let instead var
+#
+
+
+
+#let is blocked scope
+#var is function scoped
+

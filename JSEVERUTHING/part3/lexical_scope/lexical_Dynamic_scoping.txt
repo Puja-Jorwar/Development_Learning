@@ -1,0 +1,12 @@
+//js - lexical scoping -> ki aap kaha par physically available ho ye poori tareeke se depend krta hai ki aap kya access kr paoge
+
+
+
+//dynamic scoping -- ye hum follow nahi krte js me
+--> kaha se call kr rahe ho uspe depend krega ki kya value melegi
+
+//lexical scoping
+
+
+gav ka example ke liye dekho  agar dusre gav ki chije chahiye ho to aapko us gav ki permission leke us gav me jana hoga
+

@@ -1,0 +1,5 @@
+1/ DOM
+2/ Events & Event Handling
+3/ Form and Forms Validation
+4/ Timers and Intervals
+5/ localStorage, sessionStorage, And Cookies

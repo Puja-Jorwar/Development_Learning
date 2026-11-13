@@ -1,0 +1,5 @@
+#brainden Eich was working in company netscape which is one of the browser
+# who build one engine name "mocha" language.
+# js is scripting language
+# he build in 15 days so it had some problems , ES5(ecma script community) ES6 version fixed every problems
+#

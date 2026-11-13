@@ -1,0 +1,3 @@
+//koi bhi code js me line by line chalega
+
+but kabhi kabhi jaha par code wait krta hai

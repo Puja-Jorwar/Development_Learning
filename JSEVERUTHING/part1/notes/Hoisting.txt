@@ -1,0 +1,28 @@
+// hoisting imapct per type
+//hoisting -> ek variable ko jab js mein banate hai to wo variable do hisson mein toot jata hai and uska declare part upar chala jaata hai and uska initialization part neeche reh jata hai
+
+var a = 12;
+
+//do hisse
+var a = undefined;
+a = 12;
+
+upar matlb top line of the code thats why with var error nahi aata becoz of hoisting
+
+
+console.log(a);
+var a = 123;
+//output--> undefined
+
+-->var → function scoped, hoisted, initialized with undefined
+
+-->let/const → block scoped, hoisted, NOT initialized (TDZ)
+
+var --> hoist -> undefined
+let -- hoist --> reference error
+const --> hoist -- refference error
+
+ex.. 
+console.log(nm);
+var nm = "harsh";
+//op -> undefined

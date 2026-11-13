@@ -1,0 +1,21 @@
+// execution content - 
+
+js sabase pehale jaise hi aapka function dekhata hai sabasae pehale js banata hai exect=utuon context, ye ek process hai jo ki do fdiff phases me chaata hai
+1. hai memory phase aur 2. ka naam hai exection phase
+
+ek dabba banana  matalab execution context hai jo ki do parts me divide hota hai 
+
+aur usme variable stor e honge aur code bhi usi dabbe me
+
+ye concept hai, ye abstract hai- abstract matalab hide
+
+memory phase - jaa apne apne varible apni jagah allocate jrte hai
+
+exection phase  jaha sab execute hate hai
+
+
+
+
+
+
+

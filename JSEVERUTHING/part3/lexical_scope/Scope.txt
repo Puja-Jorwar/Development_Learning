@@ -1,0 +1,11 @@
+//scope hai ke aap apne created variables ko kaha tak use kr sakate ho
+
+//global scope - ye aapke pure code me accessible hota hai
+
+//local scope - ye aapke function ke andar accessible hota hai
+
+//block scope - ye aapke block ke andar accessible hota hai, curly braces ke andar
+
+//function scope - ye aapke function ke andar accessible hota hai
+
+

@@ -1,0 +1,6 @@
+// closure s hote hai functions jo ki kisi parent function ke andar ho, aur andar wala function return ho raha ho, and returning function use kre parent function ka koi variable
+
+//fayade 
+//private variables
+//global pollution
+//

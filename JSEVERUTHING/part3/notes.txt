@@ -1,0 +1,15 @@
+🔍 1. Scope, Execution Context, and Closures
+✅ Teach:
+Variable Scope: global, block, functional
+Execution context: memory creation & execution phase
+Lexical scope vs dynamic scope
+Closure definition and how variables are preserved
+Use cases: private counters, encapsulation
+⚠️ Confusion:
+Closure vs returning a function
+Scope chain vs call stack
+🧠 Mindset:
+Closures are how JavaScript gives memory to your logic
+💻 Practice:
+Build a counter with increment/decrement
+Create a function that "remembers" config options
